@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<title>Calculadora</title>
+
+</head>
+
+<body>
+
+<button class="tema-toggle" onclick="alternarTema()">🌙</button>
+
+<div class="layout">
+
+<div class="card">
+
+<header>
+<h1>Calculadora</h1>
+</header>
+
+<main class="container">
+
+<input type="text" id="visor" placeholder="Digite ou use os botões">
+
+<div class="botoes">
+
+<button onclick="adicionar('+')" class="button">+</button>
+<button onclick="adicionar('-')" class="button">−</button>
+<button onclick="adicionar('*')" class="button">×</button>
+<button onclick="adicionar('/')" class="button">÷</button>
+
+<button onclick="potencia()" class="button-avancado-op">x²</button>
+<button onclick="raiz()" class="button-avancado-op">√</button>
+<button onclick="porcentagem()" class="button-avancado-op">%</button>
+
+<button onclick="apagarChar()" class="button-clear">⌫</button>
+
+</div>
+
+<div class="cientifico">
+
+<button onclick="adicionar('Math.sin(')">sin</button>
+<button onclick="adicionar('Math.cos(')">cos</button>
+<button onclick="adicionar('Math.tan(')">tan</button>
+<button onclick="adicionar('Math.log10(')">log</button>
+<button onclick="adicionar('Math.PI')">π</button>
+
+</div>
+
+<div class="gatinho-box">
+<img id="gatinho" src="" alt="gatinho fofo">
+</div>
+
+</main>
+
+</div>
+
+<section class="historico-card">
+
+<h2>Histórico</h2>
+
+<div id="historico"></div>
+
+<div class="historico-botoes">
+
+<button onclick="apagarUltimo()" class="button-historico">↩</button>
+<button onclick="limparHistorico()" class="button-historico">Limpar</button>
+
+</div>
+
+</section>
+
+
+<section class="notas-card">
+
+<h2>Notas</h2>
+
+<textarea id="blocoNotas" placeholder="Digite suas notas..."></textarea>
+
+</section>
+
+</div>
+
+<script src="app.js"></script>
+
+<div class="banner-numeros">
+  <div class="conteudo-banner">
+
+    <button onclick="adicionar('0')">0</button>
+    <button onclick="adicionar('1')">1</button>
+    <button onclick="adicionar('2')">2</button>
+    <button onclick="adicionar('3')">3</button>
+    <button onclick="adicionar('4')">4</button>
+    <button onclick="adicionar('5')">5</button>
+    <button onclick="adicionar('6')">6</button>
+    <button onclick="adicionar('7')">7</button>
+    <button onclick="adicionar('8')">8</button>
+    <button onclick="adicionar('9')">9</button>
+
+    <!-- repetir para efeito infinito -->
+    
+    <button onclick="adicionar('0')">0</button>
+    <button onclick="adicionar('1')">1</button>
+    <button onclick="adicionar('2')">2</button>
+    <button onclick="adicionar('3')">3</button>
+    <button onclick="adicionar('4')">4</button>
+    <button onclick="adicionar('5')">5</button>
+    <button onclick="adicionar('6')">6</button>
+    <button onclick="adicionar('7')">7</button>
+    <button onclick="adicionar('8')">8</button>
+    <button onclick="adicionar('9')">9</button>
+    <button onclick="adicionar('0')">0</button>
+    <button onclick="adicionar('1')">1</button>
+    <button onclick="adicionar('2')">2</button>
+    <button onclick="adicionar('3')">3</button>
+    <button onclick="adicionar('4')">4</button>
+    <button onclick="adicionar('5')">5</button>
+    <button onclick="adicionar('6')">6</button>
+    <button onclick="adicionar('7')">7</button>
+    <button onclick="adicionar('8')">8</button>
+    <button onclick="adicionar('9')">9</button>
+    <button onclick="adicionar('0')">0</button>
+    <button onclick="adicionar('1')">1</button>
+    <button onclick="adicionar('2')">2</button>
+    <button onclick="adicionar('3')">3</button>
+    <button onclick="adicionar('4')">4</button>
+    <button onclick="adicionar('5')">5</button>
+    <button onclick="adicionar('6')">6</button>
+    <button onclick="adicionar('7')">7</button>
+    <button onclick="adicionar('8')">8</button>
+    <button onclick="adicionar('9')">9</button>
+    <button onclick="adicionar('0')">0</button>
+    <button onclick="adicionar('1')">1</button>
+    <button onclick="adicionar('2')">2</button>
+    <button onclick="adicionar('3')">3</button>
+    <button onclick="adicionar('4')">4</button>
+    <button onclick="adicionar('5')">5</button>
+    <button onclick="adicionar('6')">6</button>
+    <button onclick="adicionar('7')">7</button>
+    <button onclick="adicionar('8')">8</button>
+    <button onclick="adicionar('9')">9</button>
+    <button onclick="adicionar('0')">0</button>
+    <button onclick="adicionar('1')">1</button>
+    <button onclick="adicionar('2')">2</button>
+    <button onclick="adicionar('3')">3</button>
+    <button onclick="adicionar('4')">4</button>
+    <button onclick="adicionar('5')">5</button>
+    <button onclick="adicionar('6')">6</button>
+    <button onclick="adicionar('7')">7</button>
+    <button onclick="adicionar('8')">8</button>
+    <button onclick="adicionar('9')">9</button>
+    <button onclick="adicionar('0')">0</button>
+    <button onclick="adicionar('1')">1</button>
+    <button onclick="adicionar('2')">2</button>
+    <button onclick="adicionar('3')">3</button>
+    <button onclick="adicionar('4')">4</button>
+    <button onclick="adicionar('5')">5</button>
+    <button onclick="adicionar('6')">6</button>
+    <button onclick="adicionar('7')">7</button>
+    <button onclick="adicionar('8')">8</button>
+    <button onclick="adicionar('9')">9</button>
+
+
+  </div>
+</div>
+</body>
+</html>
